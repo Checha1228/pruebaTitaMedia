@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/sneak-styles.css">
+	<link rel="stylesheet" href="./css/sneak-mediaqueries.css">
+	<link rel="stylesheet" href="./css/zwicon.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Questrial:regular" rel="stylesheet" />
+	<script src="./js/data-portfolio.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<div class="header-mobile">
+			<div class="header-mobile__content">
+				<a href="#" id="menu-mob__button" class="header-mobile__button-menu">
+					<i class="zwicon-hamburger-menu header-mobile__button-menu--icon no_link"></i>
+				</a>
+				<div class="header-mobile__logo">
+					<img src="images/snk--logo-sneak.png" alt="">
+				</div>
+				<form action="" class="search-mob__form">
+					<div class="search-mob__form--flex">
+						<a href="#" id="back-button" class="search-mob__form--button-back">
+							<i class="zwicon-chevron-left search-mob__form--button-back--icon no_link"></i>
+						</a>
+						<input type="text" name="" id="" class="search__form--input" placeholder="Buscar...">
+						<button class="search-mob__form--button no_link">
+							<i class="zwicon-search mobile-header__button-search--icon"></i>
+						</button>
+					</div>
+				</form>
+				<a href="#" class="mobile-header__button-search">
+					<i class="zwicon-search mobile-header__button-search--icon no_link"></i>
+				</a>
+			</div>
+		</div>
+		<div class="header-nav">
+			<div class="header-nav__logo-desktop">
+				<img src="images/snk--logo-sneak.png" alt="">
+			</div>
+			<div class="header-nav__content">
+				<nav class="nav-content">
+					<ul class="nav-content__list">
+						<li class="nav-content__list--item">
+							<a href="" class="nav-content__list--item-link">All</a>
+						</li>
+						<li class="nav-content__list--item">
+							<a href="" class="nav-content__list--item-link">Branding</a>
+						</li>
+						<li class="nav-content__list--item">
+							<a href="" class="nav-content__list--item-link">Web</a>
+						</li>
+						<li class="nav-content__list--item">
+							<a href="" class="nav-content__list--item-link">Photography</a>
+						</li>
+						<li class="nav-content__list--item">
+							<a href="" class="nav-content__list--item-link">App</a>
+						</li>
+						<li class="nav-content__list--item">
+							<a href="#" class="nav-content__list--item-link">
+								<i class="zwicon-search desktop-header__button-search--icon search__show no_link"></i>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<form action="" class="search-desk__form">
+					<div class="search-desk__form--flex">
+						<input type="text" name="" id="" class="search__form--input" placeholder="Buscar...">
+						<button class="search-desk__form--button no_link">
+							<i class="zwicon-search mobile-header__button-search--icon"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</header>
+	
+	<section class="section-default__first">
+		<article class="section__article--banner">
+			<div class="banner__content">
+				<div class="banner__content-image">
+					<img class="banner__content-image--photo" src="./images/photos/jeff-sheldon-9SyOKYrq-rE-unsplash.jpeg" alt="">
+					<div class="banner__content-text">
+						<h1 class="banner__content-text--title">EXPLORE BEYOND HORIZON</h1>
+						<p class="banner__content-text--text">Magna mundi referrentur quo, no rebum dignissim qui. 
+							Per quodsi accusata id, agam labores.</p>
+						<div class="button">
+							<button class="button button__secondary">VIEW OUR WORK</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<section class="section-default">
+		<article class="section__article">
+			<div class="buttons-filter">
+				<div class="buttons-filter__view">
+					<button class="button-filter__grid">
+						<i class="zwicon-grid button-filter__grid--icon"></i>
+					</button>
+					<button onclick="view()" class="button-filter__list">
+						<i class="zwicon-hamburger-menu button-filter__list--icon"></i>
+					</button>	
+				</div>
+				<div class="buttons-filter__options">
+					<button onclick="filter('all')" href="#" class="buttons-filter__option active">All</button>
+					<button onclick="filter('branding')" href="#" class="buttons-filter__option">Branding</button>
+					<button onclick="filter('web')" href="#" class="buttons-filter__option">Web</button>
+					<button onclick="filter('photography')" href="#" class="buttons-filter__option">Photography</button>
+					<button onclick="filter('app')" href="#" class="buttons-filter__option">App</button>
+				</div>
+			</div>
+			<div id="content-all" class="gallery-grid"></div>
+			<div class="button-more-content">
+				<button class="button button__primary">Show me more</button>
+			</div>
+		</article>
+	</section>
+	<footer class="footer-content">
+		<p class="footer-content__text"> © 2016 - <span>Sneak</span> All Right Reserved</p>
+		<div class="footer__social-network">
+			<figure class="footer__social-network--item">
+				<a href="" class="footer__social-netwotk--facebook">
+					<img src="./images/snk--icon-twitter.svg" alt="" srcset="">
+				</a>
+			</figure>
+			<figure class="footer__social-network--item">
+				<a href="" class="footer__social-netwotk--twitter">
+					<img src="./images/snk--icon-twitter.svg" alt="" srcset="">
+				</a>
+			</figure>
+			<figure class="footer__social-network--item">
+				<a href="" class="footer__social-netwotk--dribble">
+					<img src="./images/snk--icon-dribble.svg" alt="" srcset="">
+				</a>
+			</figure>
+			<figure class="footer__social-network--item">
+				<a href="" class="footer__social-netwotk--google">
+					<img src="./images/snk--icon-google.svg" alt="" srcset="">
+				</a>
+			</figure>
+			<figure class="footer__social-network--item">
+				<a href="" class="footer__social-netwotk--youtube">
+					<img src="./images/snk--icon-youtube.svg" alt="" srcset="">
+				</a>
+			</figure>
+		</div>
+	</footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+<script src="./js/sneak.js"></script>
+</html>
